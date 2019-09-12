@@ -12,3 +12,12 @@ if (! function_exists('page_title')) {
         }
     }
 }
+
+if (! function_exists('set_active_route')) {
+    function set_active_route($route)
+    {
+        $base_title = 'Laracarte - List of artisans';
+
+       return Route::is($route) ? 'active' : '';
+    }
+}

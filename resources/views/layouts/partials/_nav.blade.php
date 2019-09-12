@@ -11,10 +11,10 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class=""><a href="{{ route('root_path') }}">Home</a></li>
-        <li><a href="{{ route('about_path') }}">About</a></li>
-        <li><a href="#contact">Artisans</a></li>
-        <li class="dropdown">
+            <li class="{{ set_active_route('root_path') }}"><a href="{{ route('root_path') }}">Home</a></li>
+            <li class="{{ set_active_route('about_path') }}"><a href="{{ route('about_path') }}">About</a></li>
+            <li><a href="#contact">Artisans</a></li>
+            <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet <span class="caret"></span></a>
             <ul class="dropdown-menu">
             <li><a href="https://laravel.com">Laravel.com</a></li>
